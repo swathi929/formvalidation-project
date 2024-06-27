@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+.form-container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 20px 35%;
+    transition: ease .40s;
+    background-color: rgb(250, 6, 193);
+}
+.form-container h1{
+    margin-bottom: 20px;
+}
+.form-cont{
+  border: 1px solid; 
+  width: 450px;
+  height: 550px;
+  border-radius: 10px;
+  padding: 10px;
+  align-content: center;
+  background-color: rgba(10, 198, 245, 0.867);
+}
+.form-container input{
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1px 5%;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+}
+.form-container input:focus{
+    outline: none;
+}
+.submit{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: none;
+    background-color:salmon;
+    color: white;
+}
+.submit:hover{
+    background-color: rgb(12, 12, 214);
+    box-shadow: 10px 20px 35px  rgb(85 85 85 / 20%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttonf{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgba(140, 192, 7, 0.959);
+    color: white;
+    padding: 10px;
+}
+.buttonf:hover{
+    background-color: rgb(105, 156, 19);
+    box-shadow: 10px 20px 35px  rgb(85 85 85 / 20%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.buttong:hover{
+    background-color: rgb(210, 236, 8);
+    box-shadow: 10px 20px 35px  rgba(10, 10, 10, 0.2);
+}
+
+.buttong{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+}
+
+.error {
+    color: red;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .success {
+    color: rgb(117, 128, 0);
   }
-  to {
-    transform: rotate(360deg);
+
+  button box-icon {
+    width: 18px;
+    height: 18px;
+    fill: rgb(253, 251, 253);
+    position: relative; 
+    border: 1px solid;
+    background-color: black;
+    border-radius: 5px;
+    right: 25px;
+    top: 1px;
   }
-}
